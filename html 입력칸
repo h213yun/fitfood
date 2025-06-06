@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>사진 업로드 + 미리보기</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="number"],
+    input[type="file"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+    }
+    .checkbox-group {
+      display: flex;
+      gap: 20px;
+      margin-top: 5px;
+    }
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: normal;
+    }
+    .checkbox-item span {
+      order: 1;
+    }
+    .checkbox-item input {
+      order: 2;
+    }
+    #preview {
+      margin-top: 15px;
+      max-width: 100%;
+      max-height: 300px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      display: none;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+      border-radius: 6px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /* 사용자 정의 업로드 버튼 */
+    .custom-upload {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      margin-top: 10px;
+      margin-right: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>사용자 정보 입력</h2>
+  <form action="submit.html" method="POST" enctype="multipart/form-data">
+
+    <label>사진 업로드:</label>
+    <label for="photo-gallery" class="custom-upload">📁 갤러리에서 선택</label>
+    <input type="file" id="photo-gallery" name="photo" accept="image/*">
+
+  
+
+    <!-- 사진 미리보기 -->
+    <img id="preview" alt="업로드한 사진 미리보기">
+
+    <label for="age">나이:</label>
+    <input type="number" id="age" name="age" min="0" inputmode="numeric" required>
+
+    <label for="gender">성별:</label>
+    <select id="gender" name="gender" required>
+      <option value="">선택하세요</option>
+      <option value="male">남성</option>
+      <option value="female">여성</option>
+      <option value="other">기타</option>
+    </select>
+
+    <label>지병:</label>
+    <div class="checkbox-group">
+      <label class="checkbox-item">
+        <span>당뇨</span>
+        <input type="checkbox" name="conditions[]" value="당뇨" />
+      </label>
+      <label class="checkbox-item">
+        <span>비만</span>
+        <input type="checkbox" name="conditions[]" value="비만" />
+      </label>
+      <label class="checkbox-item">
+        <span>고혈압</span>
+        <input type="checkbox" name="conditions[]" value="고혈압" />
+      </label>
+    </div>
+
+    <input type="submit" value="제출" />
+  </form>
+
+  <script>
+    const previewImg = document.getElementById('preview');
+    const galleryInput = document.getElementById('photo-gallery');
+    const cameraInput = document.getElementById('photo-camera');
+
+    function handleFileChange(input) {
+      const file = input.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          previewImg.src = e.target.result;
+          previewImg.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        previewImg.src = '';
+        previewImg.style.display = 'none';
+      }
+    }
+
+    galleryInput.addEventListener('change', function() {
+      cameraInput.value = ''; // 카메라 입력 초기화
+      handleFileChange(this);
+    });
+
+    cameraInput.addEventListener('change', function() {
+      galleryInput.value = ''; // 갤러리 입력 초기화
+      handleFileChange(this);
+    });
+  </script>
+
+</body>
+</html>
