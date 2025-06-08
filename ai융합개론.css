@@ -1,0 +1,347 @@
+/* 첫 화면 */
+
+position: absolute;
+width: 1454px;
+height: 1020px;
+left: 27px;
+top: 31px;
+
+background: #F5FFE6;
+
+/* FIT FOOD */
+
+position: absolute;
+width: 719px;
+height: 142px;
+left: 34px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 128px;
+line-height: 155px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* 사진업로드 나이 성별 지병 */
+
+position: absolute;
+width: 1349px;
+height: 781px;
+left: 34px;
+top: 196px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+
+color: #000000;
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 583px;
+height: 277px;
+left: 372px;
+top: 196px;
+
+background: #D9D9D9;
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 565px;
+height: 65px;
+left: 372px;
+top: 512px;
+
+background: #D9D9D9;
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 565px;
+height: 65px;
+left: 372px;
+top: 670px;
+
+background: #D9D9D9;
+
+/* Rectangle 9 */
+
+position: absolute;
+width: 565px;
+height: 65px;
+left: 372px;
+top: 803px;
+background: #D9D9D9;
+
+/* nutrition-facts-icons-illustrations-vector 1 */
+
+position: absolute;
+width: 477px;
+height: 477px;
+left: 907px;
+top: 514px;
+
+background: url(nutrition-facts-icons-illustrations-vector.jpg);
+border-radius: 84px;
+
+/* 사용자가 입력한 후 화면 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #F5FFE6;
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 323px;
+top: 550px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 606px;
+height: 496px;
+left: 83px;
+top: 127px;
+
+background: #FFF1C4;
+border-radius: 30px;
+
+
+/* 사진 업로드 */
+
+position: absolute;
+width: 770px;
+height: 57px;
+left: 83px;
+top: 47px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+
+
+
+/* Text on a path */
+
+position: absolute;
+width: 1186px;
+height: 280px;
+left: 107px;
+top: 677px;
+
+background: #A8D6BE;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 1064px;
+height: 340px;
+left: 83px;
+top: 647px;
+
+background: #78D798;
+border-radius: 30px;
+
+
+/* 나이: _______세 성별: 지병: */
+
+position: absolute;
+width: 1194px;
+height: 243px;
+left: 133px;
+top: 687px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+
+/* 결과 화면 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #F5FFE6;
+
+
+/* Ellipse 1 */
+
+position: absolute;
+visibility: hidden;
+width: 340px;
+height: 287px;
+left: 97px;
+top: 100px;
+
+background: #D9D9D9;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+visibility: hidden;
+width: 1063.53px;
+height: 910.44px;
+left: 84px;
+top: 57px;
+
+background: rgba(136, 189, 20, 0.51);
+border-radius: 30px;
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 1064px;
+height: 403px;
+left: 21px;
+top: 96px;
+
+background: #FFF1C4;
+box-shadow: 0px 0px 4px rgba(209, 142, 142, 0.25);
+border-radius: 30px;
+
+
+/* 주의) 한끼 섭취 칼로리 상한선을 넘지 않습니다. 식품 첨가물이 3가지 이상 포함되어 있습니다. 비만의 한 끼 섭취 나트륨 상한선을 넘었습니다. */
+
+position: absolute;
+width: 964px;
+height: 285px;
+left: 43px;
+top: 155px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 800;
+font-size: 36px;
+line-height: 44px;
+
+color: #FF1717;
+
+
+
+/* Arrow 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 87px;
+height: 0px;
+left: 43px;
+top: 570px;
+
+border: 2px solid #000000;
+
+
+/* Vector 1 */
+
+position: absolute;
+visibility: hidden;
+width: 45px;
+height: 150px;
+left: 171px;
+top: 639px;
+
+opacity: 0.5;
+border: 2px solid #000000;
+border-radius: 2px;
+
+
+/* Vector 2 */
+
+position: absolute;
+visibility: hidden;
+width: 316.67px;
+height: 24.84px;
+left: 216.67px;
+top: 566.67px;
+
+border: 2px solid #F04D56;
+
+
+/* Vector 3 */
+
+position: absolute;
+visibility: hidden;
+width: 45px;
+height: 150px;
+left: 952px;
+top: 639px;
+
+opacity: 0.5;
+border: 2px solid #000000;
+border-radius: 2px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 1064px;
+height: 340px;
+left: 43px;
+top: 632px;
+
+background: #78D798;
+border-radius: 30px;
+
+
+/* 1. 현미밥 닭가슴살 데친브로콜리 2. 두부샐러드, 구운연어, 찐 고구마 3. 잡곡밥, 참치야채비빔, 미역국 */
+
+position: absolute;
+width: 920px;
+height: 213px;
+left: 87px;
+top: 680px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+
+
+
+/* 건강한 식단 3가지를 추천해드리겠습니다. */
+
+position: absolute;
+width: 740px;
+height: 62px;
+left: 155px;
+top: 539px;
+
+font-family: 'Alike';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+
+color: #000000;
+
