@@ -163,3 +163,47 @@ input[type="checkbox"] {
   margin: 30px auto 0;
   cursor: pointer;
 }
+
+/* 결과 화면 */
+.container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.result-box {
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 20px;
+  padding: 30px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 30px;
+  white-space: pre-line; 
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.btn {
+  background: #1D6331;
+  color: white;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
